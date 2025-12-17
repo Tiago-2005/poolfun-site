@@ -1,14 +1,35 @@
-function showSection(id) {
-    const pages = document.querySelectorAll(".page");
-    pages.forEach(page => page.classList.remove("active"));
+// Au chargement de la page, on affiche automatiquement l'accueil
+document.addEventListener("DOMContentLoaded", function () {
+    showSection("accueil");
+});
 
-    document.getElementById(id).classList.add("active");
+// Fonction qui affiche une section et cache les autres
+function showSection(sectionId) {
+    const sections = document.querySelectorAll(".page");
+
+    sections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.style.display = "block";
+        window.scrollTo(0, 0); // remonte en haut de la page
+    }
 }
 
-const form = document.getElementById("contactForm");
+// Gestion du formulaire de contact
+const contactForm = document.getElementById("contact-form");
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Merci pour votre message ! L’équipe PoolFun vous répondra bientôt.");
-    form.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        alert(
+            "Merci pour votre message !\n" +
+            "L’équipe PoolFun vous répondra dans les plus brefs délais."
+        );
+
+        contactForm.reset();
+    });
+}
