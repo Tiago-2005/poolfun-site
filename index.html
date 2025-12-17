@@ -5,6 +5,7 @@
     <title>PoolFun - Ballons de piscine</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
@@ -21,33 +22,96 @@
     </div>
 </header>
 
-<main>
+<main class="container">
 
-<section id="accueil" class="page accueil">
-    <div class="container">
+    <section id="accueil" class="page">
         <h2>Bienvenue chez PoolFun</h2>
         <p>
-            PoolFun vous propose des ballons de piscine de qualité pour petits et grands.
-            Profitez de l’été en famille avec nos produits ludiques et résistants.
+            PoolFun est spécialisé dans la vente de ballons de piscine pour toute la famille.
+            Profitez de l’été avec des produits ludiques et colorés.
         </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Swimming_pool_family.jpg" alt="Famille dans une piscine">
-    </div>
-</section>
+        <img src="images/accueil.jpg" alt="Famille dans une piscine avec ballons">
+    </section>
 
-<section id="categories" class="page categories">
-    <div class="container">
+    <section id="categories" class="page">
         <h2>Nos catégories</h2>
         <ul>
-            <li>Ballons de piscine basiques</li>
-            <li>Ballons pour enfants</li>
+            <li>Ballons basiques</li>
+            <li>Ballons enfants</li>
             <li>Ballons design</li>
             <li>Ballons XXL</li>
         </ul>
-    </div>
-</section>
+    </section>
 
-<section id="tarifs" class="page tarifs">
-    <div class="container">
+    <section id="tarifs" class="page">
         <h2>Nos tarifs</h2>
 
         <div class="cards">
+            <div class="card">
+                <img src="images/ballon-basique.png" alt="Ballon basique">
+                <h3>Ballon basique</h3>
+                <p>5 €</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ballon-enfant.jpg" alt="Ballon enfant">
+                <h3>Ballon enfant</h3>
+                <p>7 €</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ballon-design.jpg" alt="Ballon design">
+                <h3>Ballon design</h3>
+                <p>10 €</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ballon-xxl.jpg" alt="Ballon XXL">
+                <h3>Ballon XXL</h3>
+                <p>15 €</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="page">
+        <h2>Notre équipe & magasin</h2>
+        <p><strong>Directeur :</strong> Tiago Mota</p>
+        <p><strong>Communication :</strong> Mélissa Da Costa</p>
+        <p>📍 Magasin PoolFun – Cergy</p>
+        <p>
+            « Merci à nos clients pour leur confiance.
+            Toute l’équipe PoolFun est heureuse de vous accompagner chaque été. »
+        </p>
+    </section>
+
+    <section id="contact" class="page">
+        <h2>Contact</h2>
+
+        <form id="contact-form">
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <p>Instagram • Facebook • X</p>
+    </section>
+
+    <section id="avis" class="page">
+        <h2>Avis clients</h2>
+        <div class="cards">
+            <div class="card">⭐⭐⭐⭐⭐<br>Excellent ! — Julie</div>
+            <div class="card">⭐⭐⭐⭐<br>Très satisfait — Karim</div>
+            <div class="card">⭐⭐⭐⭐⭐<br>Accueil parfait — Sophie</div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 PoolFun</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
