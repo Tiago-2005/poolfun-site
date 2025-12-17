@@ -5,54 +5,57 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: linear-gradient(#b3e5fc, #e0f7fa);
 }
 
-/* Container centré */
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    padding: 30px;
-    text-align: center;
+    padding: 20px;
 }
 
-/* Header */
 header {
     background-color: #0288d1;
     color: white;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
 }
 
 nav button {
     margin: 5px;
     padding: 10px 15px;
     border: none;
+    background-color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Pages */
+nav button:hover {
+    background-color: #b3e5fc;
+}
+
 .page {
     display: none;
-    min-height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
 }
 
-/* Fonds par rubrique */
-.accueil { background-color: #e3f2fd; }
-.categories { background-color: #f1f8e9; }
-.tarifs { background-color: #fffde7; }
-.equipe { background-color: #ede7f6; }
-.contact { background-color: #e0f7fa; }
-.avis { background-color: #fce4ec; }
-
-/* Images */
 img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin: 20px auto;
+    max-width: 500px;
     display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-/* Cards */
 .cards {
     display: flex;
     justify-content: center;
@@ -61,13 +64,13 @@ img {
 }
 
 .card {
-    background-color: white;
+    background-color: #e1f5fe;
     padding: 15px;
     border-radius: 10px;
     width: 220px;
+    text-align: center;
 }
 
-/* Formulaire */
 form {
     max-width: 400px;
     margin: auto;
@@ -75,11 +78,23 @@ form {
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
     margin-bottom: 10px;
+    padding: 8px;
 }
 
 form button {
     background-color: #0288d1;
     color: white;
-    bo
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #0288d1;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
