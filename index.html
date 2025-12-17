@@ -9,114 +9,29 @@
 <body>
 
 <header>
-    <h1>PoolFun</h1>
-    <nav>
-        <button onclick="showSection('accueil')">Accueil</button>
-        <button onclick="showSection('categories')">Catégories</button>
-        <button onclick="showSection('tarifs')">Tarifs</button>
-        <button onclick="showSection('equipe')">Équipe & magasin</button>
-        <button onclick="showSection('contact')">Contact</button>
-        <button onclick="showSection('avis')">Avis clients</button>
-    </nav>
+    <div class="container">
+        <h1>PoolFun</h1>
+        <nav>
+            <button onclick="showSection('accueil')">Accueil</button>
+            <button onclick="showSection('categories')">Catégories</button>
+            <button onclick="showSection('tarifs')">Tarifs</button>
+            <button onclick="showSection('equipe')">Équipe & magasin</button>
+            <button onclick="showSection('contact')">Contact</button>
+            <button onclick="showSection('avis')">Avis clients</button>
+        </nav>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <!-- ACCUEIL -->
     <section id="accueil" class="page">
         <h2>Bienvenue chez PoolFun</h2>
         <p>
             PoolFun est spécialisé dans la vente de ballons de piscine pour toute la famille.
-            Profitez de l’été avec des produits colorés, résistants et amusants.
+            Profitez de l’été avec des produits ludiques et colorés.
         </p>
         <img src="images/accueil.jpg" alt="Famille dans une piscine avec ballons">
     </section>
 
-    <!-- CATEGORIES -->
     <section id="categories" class="page">
-        <h2>Nos catégories de ballons</h2>
-        <ul>
-            <li>Ballons de piscine basiques</li>
-            <li>Ballons pour enfants</li>
-            <li>Ballons design</li>
-            <li>Ballons XXL</li>
-        </ul>
-    </section>
-
-    <!-- TARIFS -->
-    <section id="tarifs" class="page">
-        <h2>Nos tarifs</h2>
-
-        <div class="cards">
-            <div class="card">
-                <img src="images/ballon-basique.png" alt="Ballon de piscine basique">
-                <h3>Ballon basique</h3>
-                <p>5 €</p>
-            </div>
-
-            <div class="card">
-                <img src="images/ballon-enfant.jpg" alt="Ballon enfant">
-                <h3>Ballon enfant</h3>
-                <p>7 €</p>
-            </div>
-
-            <div class="card">
-                <img src="images/ballon-design.jpg" alt="Ballon design">
-                <h3>Ballon design</h3>
-                <p>10 €</p>
-            </div>
-
-            <div class="card">
-                <img src="images/ballon-xxl.jpg" alt="Ballon XXL">
-                <h3>Ballon XXL</h3>
-                <p>15 €</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- EQUIPE -->
-    <section id="equipe" class="page">
-        <h2>Notre équipe & magasin</h2>
-        <p><strong>Directeur :</strong> Tiago Mota</p>
-        <p><strong>Responsable communication :</strong> Mélissa Da Costa</p>
-        <p>Magasin PoolFun – Cergy</p>
-        <p>
-            « Merci à tous nos clients pour leur confiance.
-            Toute l’équipe PoolFun est fière de vous accompagner chaque été. »
-        </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="page">
-        <h2>Contactez-nous</h2>
-
-        <form id="contact-form">
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Votre message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-
-        <p>Instagram • Facebook • X</p>
-    </section>
-
-    <!-- AVIS -->
-    <section id="avis" class="page">
-        <h2>Avis clients</h2>
-
-        <div class="cards">
-            <div class="card">⭐⭐⭐⭐⭐<br>Super qualité ! — Julie</div>
-            <div class="card">⭐⭐⭐⭐<br>Très bon site — Karim</div>
-            <div class="card">⭐⭐⭐⭐⭐<br>Accueil parfait — Sophie</div>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2025 PoolFun</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+        <h2>
