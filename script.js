@@ -11,8 +11,6 @@ function showSection(id) {
     if (section) {
         section.style.display = "block";
     }
-
-    window.scrollTo(0, 0);
 }
 
 const form = document.getElementById("contact-form");
