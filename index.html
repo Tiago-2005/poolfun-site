@@ -11,101 +11,111 @@
     <h1>PoolFun 🎉</h1>
     <nav>
         <button onclick="showSection('accueil')">Accueil</button>
-        <button onclick="showSection('categories')">Catégories</button>
-        <button onclick="showSection('equipe')">Équipe & magasin</button>
-        <button onclick="showSection('contact')">Contact</button>
-        <button onclick="showSection('avis')">Avis clients</button>
+        <button onclick="showSection('categories')">Nos Catégories</button>
+        <button onclick="showSection('equipe')">Notre Équipe</button>
+        <button onclick="showSection('contact')">Contactez-nous</button>
+        <button onclick="showSection('avis')">Avis Clients</button>
     </nav>
 </header>
 
-<!-- Accueil -->
+<!-- ACCUEIL -->
 <section id="accueil" class="page active">
     <h2>Bienvenue chez PoolFun</h2>
     <p>
-        PoolFun est un site vitrine dédié à la vente de ballons de piscine
-        pour toute la famille. Nos produits allient plaisir, sécurité
-        et qualité pour un été réussi.
+        Chez PoolFun, nous sommes passionnés par les loisirs aquatiques. Notre mission est de vous proposer
+        des ballons de piscine adaptés à toute la famille, pour toutes les occasions. Profitez d'un large éventail
+        de produits conviviaux et de qualité pour faire de vos étés un moment de pur plaisir !
     </p>
-    <img src="https://thumbs.dreamstime.com/b/ballon-de-plage-dans-la-piscine-38225870.jpg" alt="Ballon de piscine dans une piscine">
+    <p>
+        Saviez-vous que nos produits sont testés dans des conditions réelles ? Que vous aimiez nager, jouer ou organiser
+        des fêtes autour de la piscine, PoolFun est là pour embellir vos moments de détente.
+    </p>
+    <img src="https://thumbs.dreamstime.com/b/ballon-de-plage-dans-la-piscine-38225870.jpg"
+         alt="Ballon de plage dans une piscine">
 </section>
 
-<!-- Catégories -->
+<!-- CATEGORIES -->
 <section id="categories" class="page">
-    <h2>Nos catégories</h2>
+    <h2>Nos Catégories de Ballons</h2>
+    <p>Découvrez notre variété : une gamme pour tous les âges et styles !</p>
     <div class="cards">
-        <div class="card" onclick="showBallon('basique')"><h3>Ballon basique</h3></div>
-        <div class="card" onclick="showBallon('enfant')"><h3>Ballon enfant</h3></div>
-        <div class="card" onclick="showBallon('design')"><h3>Ballon design</h3></div>
+        <div class="card" onclick="showBallon('basique')"><h3>Ballon Basique</h3></div>
+        <div class="card" onclick="showBallon('enfant')"><h3>Ballon Enfant</h3></div>
+        <div class="card" onclick="showBallon('design')"><h3>Ballon Design</h3></div>
         <div class="card" onclick="showBallon('xxl')"><h3>Ballon XXL</h3></div>
     </div>
 </section>
 
-<!-- Page dédiée ballon -->
+<!-- DETAILS BALLON -->
 <section id="ballonDetails" class="page">
     <h2 id="ballonTitre"></h2>
     <img id="ballonImage" src="" alt="Ballon de piscine">
     <p id="ballonUtilisation"></p>
     <p id="ballonEndroits"></p>
     <p id="ballonPrix"></p>
-    <button onclick="showSection('categories')">⬅ Retour aux catégories</button>
+    <button onclick="showSection('categories')">⬅ Retour aux Catégories</button>
 </section>
 
-<!-- Équipe & magasin -->
+<!-- ÉQUIPE -->
 <section id="equipe" class="page">
-    <h2>Notre équipe & magasin</h2>
+    <h2>Faites Connaissance avec Notre Équipe</h2>
+    <p>
+        Derrière PoolFun se cache une équipe passionnée et dévouée, prête à vous offrir les meilleurs produits et conseils.
+        Chaque membre joue un rôle essentiel pour garantir votre satisfaction.
+    </p>
     <ul>
         <li><strong>Tiago Mota</strong> – Directeur</li>
         <li><strong>Sophie Dubois</strong> – Conseillère clientèle</li>
         <li><strong>Amine Benali</strong> – Gestion des stocks</li>
         <li><strong>Mélissa Da Costa</strong> – Communication</li>
     </ul>
-    <h3>Mot du directeur</h3>
-    <p>
-        « Merci à tous nos clients pour leur confiance.
-        Chez PoolFun, nous mettons tout en œuvre pour proposer
-        des ballons de piscine de qualité pour petits et grands. »
-        <br><br>
-        — <strong>Tiago Mota</strong>
-    </p>
-    <p>📍 Magasin PoolFun – Cergy (95)</p>
+    <blockquote>
+        "Travailler chez PoolFun n'est pas juste un métier, c'est une aventure où le sourire de nos clients reste notre plus belle récompense."
+        <br>— <strong>Tiago Mota</strong>
+    </blockquote>
 </section>
 
-<!-- Contact -->
+<!-- CONTACT -->
 <section id="contact" class="page">
-    <h2>Contact</h2>
+    <h2>Contactez-nous</h2>
+    <p>Une question ? Un avis ? Nous sommes là pour y répondre !</p>
     <form id="contactForm">
         <input type="text" placeholder="Votre nom" required>
         <input type="email" placeholder="Votre email" required>
         <textarea placeholder="Votre message" required></textarea>
         <button type="submit">Envoyer</button>
     </form>
-    <p>Instagram | Facebook | X</p>
 </section>
 
-<!-- Avis clients -->
+<!-- AVIS CLIENTS -->
 <section id="avis" class="page">
-    <h2>Avis clients</h2>
+    <h2>Ce Que Nos Clients Disent</h2>
     <div class="cards">
         <div class="card">
             <p>⭐⭐⭐⭐⭐</p>
-            <p>Ballons solides et très colorés. Super qualité !</p>
+            <p>Les ballons sont de très bonne qualité ! Mes enfants en raffolent.</p>
             <strong>Julie R.</strong>
         </div>
         <div class="card">
             <p>⭐⭐⭐⭐</p>
-            <p>Très bon accueil au magasin de Cergy.</p>
+            <p>Livraison rapide, et très bon accueil lors de nos appels.</p>
             <strong>Karim L.</strong>
         </div>
         <div class="card">
             <p>⭐⭐⭐⭐⭐</p>
-            <p>Les enfants adorent les ballons, je recommande.</p>
-            <strong>Sophie M.</strong>
+            <p>Un incontournable pour nos fêtes au bord de la piscine !</p>
+            <strong>Sarah T.</strong>
+        </div>
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Super service client. Bravo à l’équipe PoolFun 🏖️.</p>
+            <strong>Antoine B.</strong>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 PoolFun - Projet scolaire</p>
+    <p>© 2025 PoolFun - Tous droits réservés.</p>
 </footer>
 
 <script src="script.js"></script>
