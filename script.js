@@ -3,22 +3,19 @@ window.onload = function () {
 };
 
 function showSection(id) {
-    const pages = document.querySelectorAll(".page");
-
-    pages.forEach(page => {
+    document.querySelectorAll(".page").forEach(page => {
         page.style.display = "none";
     });
 
-    const activePage = document.getElementById(id);
-    if (activePage) {
-        activePage.style.display = "block";
+    const section = document.getElementById(id);
+    if (section) {
+        section.style.display = "block";
     }
 
     window.scrollTo(0, 0);
 }
 
 const form = document.getElementById("contact-form");
-
 if (form) {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
